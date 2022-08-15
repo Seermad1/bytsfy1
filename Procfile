@@ -1,0 +1,1 @@
+web: gunicorn bytsfy.wsgi --log-file -
