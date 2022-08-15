@@ -111,7 +111,7 @@ def splitCSV(request):
                 messages.error(request, "Please upload a valid csv file")
                 return redirect(request.META.get("HTTP_REFERER"))
    
-    return render(request, "csv.html")
+    return render(request, "CSV.html")
 
 
 @login_required(login_url="account_login")
@@ -184,7 +184,7 @@ def splitJSON(request):
         return redirect("download-save", pk=file.id)
 
 
-    return render(request, "json.html")
+    return render(request, "JSON.html")
 
 
 @login_required(login_url="account_login")
